@@ -1,0 +1,7 @@
+int main() {
+        map<string, string> mp;
+        mp["tiger"] = "harsh";
+        mp["lion"]= "akash";
+        
+        cout<<mp["lion"]<<endl;
+}
