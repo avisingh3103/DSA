@@ -1,0 +1,12 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    priority_queue <int> pq;
+    pq.push(31);
+       pq.push(34);
+       pq.push(43);
+       pq.push(78);
+       pq.push(37);
+    cout<<pq.top();
+}
