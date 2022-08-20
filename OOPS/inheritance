@@ -1,0 +1,14 @@
+class student{
+    public:
+    void sound(){
+    cout<<"hello";
+    }
+};
+class harsh:public student
+{
+    
+};
+int main(){
+    harsh ob;
+    ob.sound();
+}
