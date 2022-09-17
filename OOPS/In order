@@ -1,0 +1,50 @@
+class node{
+    public:
+    int value;
+    node * left;
+    node * right;
+        
+    node(int x){
+        value=x;
+        left=right=NULL;
+    }
+};
+
+void traversal(node * root){
+    if(root==NULL){
+        return;
+    }
+    
+    
+   
+     traversal(root->left);
+    cout<<root->value<<" ";
+    traversal(root->right);
+    
+
+    
+}
+
+int main()
+{
+    node * a=new node(1);
+    node *b=new node(2);
+    node *c=new node(3);
+    node *d=new node(4);
+    node *e=new node(5);
+    node *f=new node(6);
+    node *g=new node(7);
+ 
+    
+    
+     a->right=b;
+     b->right=c;
+     c->right=d;
+    d->right=e;
+     e->right=f;
+     f->right=g;
+    
+    // node a=root;
+    traversal(a);
+    
+};
